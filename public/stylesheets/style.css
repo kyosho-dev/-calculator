@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #dfdfdf;
+}
+
+
+/*set main style*/
+.main{
+    background-color: #222222;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: end;
+}
+
+.space{
+    padding: 1%;
+}
+
+
+/*style the calculator*/
+.calcBox{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.calc{
+    background-color: #1d1c1c;
+    height: 80%;
+    width: 30%;
+    
+}
+
+.display{
+    height: 20%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    font-size: 25px;
+}
+
+.inputs{
+    height: 80%;
+}
+
+.lin1, .lin2, .lin3, .lin4, .lin5{
+    display: flex;
+    justify-content: space-around;
+}
+
+/*style the button and animations*/
+
+/*anim 1*/
+.inputs button{
+    background-color: #3b3a3a;
+    border: none;
+    border-radius: 5px;
+    padding: 28px 38px;
+}
+
+.inputs button:hover{
+    background-color: #2b2a2a;
+}
+
+.inputs button:active{
+    background-color: #3b3a3a;
+}
+
+/*anim 2*/
+.lin1 button, .lin2 button:last-child, .lin3 button:last-child, .lin4 button:last-child{
+    background-color: #2b2a2a;
+}
+
+.lin1 button:hover, .lin2 button:last-child:hover, .lin3 button:last-child:hover, .lin4 button:last-child:hover{
+    background-color: #3b3a3a;
+}
+
+.lin1 button:active, .lin2 button:last-child:active, .lin3 button:last-child:active, .lin4 button:last-child:active{
+    background-color: #2b2a2a;
+}
+
+/*anim 3*/
+.lin5 button:last-child{
+    background-color: #224646;
+}
+
+.lin5 button:last-child:hover{
+    background-color: #3a7a7a;
+}
+
+.lin5 button:last-child:active{
+    background-color: #224646;
+}
+
+/*hide the second svg*/
+.curve2{
+    visibility: hidden;
+}
